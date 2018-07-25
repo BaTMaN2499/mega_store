@@ -9,7 +9,7 @@ class Product < ApplicationRecord
     if final_stock >= 0
       update(stock: final_stock)
 
-      Shipping.create(
+      shipping = Shipping.create(
         address: customer.address,
         status: 'pending'
       )
