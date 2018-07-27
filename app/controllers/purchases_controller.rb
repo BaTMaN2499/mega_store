@@ -1,7 +1,8 @@
 class PurchasesController < ApplicationController
   def create
     product = Product.find(params[:product_id])
-    purchase = product.buy(current_user, params[:amount])
+    customer = Customer.find(purchase_params[:customer_id])
+    purchase = product.buy(customer, purchase_params[:amount])
 
     if purchase
       render json: purchase
@@ -9,5 +10,14 @@ class PurchasesController < ApplicationController
       message = 'The purchase could not be completed.'
       render json: { errors: [message] }, status: 422
     end
+  end
+
+  private
+
+  def purchase_params
+    params.require(:purchase).permit([
+      :customer_id,
+      :amount
+    ])
   end
 end

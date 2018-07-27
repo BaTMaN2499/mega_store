@@ -4,23 +4,27 @@ class Product < ApplicationRecord
   PROFIT_PERCENTAGE = 0.20
 
   def buy(customer, amount)
-    final_stock = stock - amount
+    final_stock = stock - amount.to_i
 
     if final_stock >= 0
-      update(stock: final_stock)
+      ApplicationRecord.transaction do
+        update!(stock: final_stock)
 
-      shipping = Shipping.create(
-        address: customer.address,
-        status: :waiting_clearance
-      )
+        purchase = Purchase.create!(
+          product: self,
+          amount: amount,
+          store: store,
+          customer: customer
+        )
 
-      Purchase.create(
-        product: self,
-        amount: amount,
-        store: store,
-        customer: customer,
-        shipping: shipping
-      )
+        Shipping.create!(
+          address: customer.address,
+          status: :waiting_clearance,
+          purchase: purchase
+        )
+
+        purchase
+      end
     else
       false
     end
