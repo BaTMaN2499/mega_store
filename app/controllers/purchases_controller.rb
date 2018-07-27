@@ -7,7 +7,7 @@ class PurchasesController < ApplicationController
       render json: purchase
     else
       message = 'The purchase could not be completed.'
-      render json: { error: message }, status: 422
+      render json: { errors: [message] }, status: 422
     end
   end
 end

@@ -8,7 +8,7 @@ class Purchase < ApplicationRecord
     product.base_price * amount
   end
 
-  def final_price
+  def price
     base_price + profit
   end
 

@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   resources :products, only: [:show] do
     resources :purchases, only: [:create]
   end
+
+  resources :shipping, only: [:update]
 end

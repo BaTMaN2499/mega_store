@@ -11,7 +11,7 @@ class Product < ApplicationRecord
 
       shipping = Shipping.create(
         address: customer.address,
-        status: 'pending'
+        status: :waiting_clearance
       )
 
       Purchase.create(
@@ -24,5 +24,13 @@ class Product < ApplicationRecord
     else
       false
     end
+  end
+
+  def price
+    base_price + profit
+  end
+
+  def profit
+    base_price * PROFIT_PERCENTAGE
   end
 end
