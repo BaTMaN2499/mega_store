@@ -10,6 +10,8 @@ gem 'sqlite3'
 
 group :development, :test do
   gem "pry-rails", "~> 0.3.6"
+  gem "rspec-rails", "~> 3.7"
+  gem "factory_bot_rails", "~> 4.10"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
