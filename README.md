@@ -37,15 +37,15 @@ Also some less concrete ideas are being thrown around the corridors of the compa
 - Advanced reports for stores, containing everything they sold and what was the profit for each item.
 
 ## The application
-This app is an API made as lightly as possible to allow developers to focus on object-oriented design. That means we had to trim down some (very important) topics to get just the Minimum Viable Design Experience™.
-
 ![Entities Diagram](https://github.com/victor-am/mega_store/raw/master/docs/entities.png)
+
+This app is an API made as lightly as possible to allow developers to focus on object-oriented design. That means we had to trim down some (very important) topics to get just the Minimum Viable Design Experience™.
 
 ### Database
 We use SQLite3 here as it was the simplest database around (and the Rails default).
 
 ### Web Server
-Our old WEBbrick friend returns.
+Hello WEBbrick, my old friend.
 
 ### Tests
 Only request specs, and not the most comprehensive ones either. The idea here just allows for refactoring exercises while keeping the application from breaking.
