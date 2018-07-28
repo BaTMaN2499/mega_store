@@ -13,7 +13,7 @@ class Shipping < ApplicationRecord
       Thank you for your purchase #{purchase.customer.name}!
 
       Here are the items you bought:
-      - x#{purchase.amount} #{purchase.product.name} - $#{purchase.price}
+      - x#{purchase.amount} #{purchase.product.name} - Unit Price: $#{purchase.price}
 
       Total: $#{purchase.price}
     RECEIPT
