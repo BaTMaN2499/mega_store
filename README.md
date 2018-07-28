@@ -24,6 +24,16 @@ From a product development perspective, they devoted some time to fix their init
 
 Now that their business product-market fit has been found, they wish to continue paying their accumulated technical debt, but they also have a lot of features to ship, so we have to balance our time spent on refactories.
 
+Three key features are on the tip of the tongue of the business team for quite some time, and they have a big chance of finding themselves a place inside the roadmap:
+- Allow the purchase of more than one type of product at the same time.
+- Customize Mega Store profit percentage for each type of product.
+- Allow the stores to use the delivery infrastructure of the company for a price.
+
+Also some less concrete ideas are being thrown around the corridors of the company, and may or may not enter the roadmap at some point in the future:
+- Allow two customers to share the same purchase.
+- Allow customers to pick up their products on the physical store.
+- Advanced reports for stores, containing everything they sold and what was the profit for each item.
+
 ## The application
 This app is an API made as lightly as possible to allow developers to focus on object-oriented design. That means we had to trim down some (very important) topics to get just the Minimum Viable Design Experience™.
 
