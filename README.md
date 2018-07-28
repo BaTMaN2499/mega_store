@@ -25,7 +25,9 @@ From a product development perspective, they devoted some time to fix their init
 Now that their business product-market fit has been found, they wish to continue paying their accumulated technical debt, but they also have a lot of features to ship, so we have to balance our time spent on refactories.
 
 ## The application
-This app is an API made as lightly as possible to allow developers to focus on object-oriented design. That means we had to trim down some (very important) topics to get just the Minimum Viable Design Experience™:
+This app is an API made as lightly as possible to allow developers to focus on object-oriented design. That means we had to trim down some (very important) topics to get just the Minimum Viable Design Experience™.
+
+![Entities Diagram](https://github.com/victor-am/mega_store/raw/master/docs/entities.png)
 
 ### Database
 We use SQLite3 here as it was the simplest database around (and the Rails default).
