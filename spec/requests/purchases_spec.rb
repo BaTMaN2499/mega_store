@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe 'purchases', type: :request do
-  describe 'post /products/:product_id/purchases' do
+RSpec.describe 'Purchases', type: :request do
+  describe 'POST /products/:product_id/purchases' do
     it 'creates a new purchase with the correct attributes' do
       product = FactoryBot.create(:product)
       customer = FactoryBot.create(:customer)

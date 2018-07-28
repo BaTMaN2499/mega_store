@@ -7,5 +7,5 @@ Rails.application.routes.draw do
     resources :purchases, only: [:create]
   end
 
-  resources :shipping, only: [:update]
+  resources :shippings, only: [:update, :show]
 end

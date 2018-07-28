@@ -15,9 +15,6 @@ class PurchasesController < ApplicationController
   private
 
   def purchase_params
-    params.require(:purchase).permit([
-      :customer_id,
-      :amount
-    ])
+    params.require(:purchase).permit(:customer_id, :amount)
   end
 end
