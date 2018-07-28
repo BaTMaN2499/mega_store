@@ -24,11 +24,13 @@ From a product development perspective, they devoted some time to fix their init
 
 Now that their business product-market fit has been found, they wish to continue paying their accumulated technical debt, but they also have a lot of features to ship, so we have to balance our time spent on refactories.
 
+### Prioritary future features
 Three key features are on the tip of the tongue of the business team for quite some time, and they have a big chance of finding themselves a place inside the roadmap:
 - Allow the purchase of more than one type of product at the same time.
 - Customize Mega Store profit percentage for each type of product.
 - Allow the stores to use the delivery infrastructure of the company for a price.
 
+### Other possible future features
 Also some less concrete ideas are being thrown around the corridors of the company, and may or may not enter the roadmap at some point in the future:
 - Allow two customers to share the same purchase.
 - Allow customers to pick up their products on the physical store.
