@@ -28,7 +28,6 @@ Now that their business product-market fit has been found, they wish to continue
 Three key features are on the tip of the tongue of the business team for quite some time, and they have a big chance of finding themselves a place inside the roadmap:
 - Allow the purchase of more than one type of product at the same time.
 - Customize Mega Store profit percentage for each type of product.
-- Allow the stores to use the delivery infrastructure of the company for a price.
 
 ### Other possible future features
 Also some less concrete ideas are being thrown around the corridors of the company, and may or may not enter the roadmap at some point in the future:
