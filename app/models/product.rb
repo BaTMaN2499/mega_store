@@ -1,7 +1,7 @@
 class Product < ApplicationRecord
   belongs_to :store
 
-  PROFIT_PERCENTAGE = 0.20
+  SERVICE_TAX_PERCENTAGE = 0.20
 
   def buy(customer, amount)
     final_stock = stock - amount.to_i
@@ -31,10 +31,10 @@ class Product < ApplicationRecord
   end
 
   def price
-    base_price + profit
+    base_price + service_tax
   end
 
-  def profit
-    base_price * PROFIT_PERCENTAGE
+  def service_tax
+    base_price * SERVICE_TAX_PERCENTAGE
   end
 end

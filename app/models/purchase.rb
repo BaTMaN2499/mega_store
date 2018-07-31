@@ -9,10 +9,10 @@ class Purchase < ApplicationRecord
   end
 
   def price
-    base_price + profit
+    base_price + service_tax
   end
 
-  def profit
-    base_price * Product::PROFIT_PERCENTAGE
+  def service_tax
+    base_price * Product::SERVICE_TAX_PERCENTAGE
   end
 end
