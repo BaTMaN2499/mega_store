@@ -36,7 +36,7 @@ Also some less concrete ideas are being thrown around the corridors of the compa
 - Advanced reports for stores, containing everything they sold and what was the profit for each item.
 
 ## The application
-![Entities Diagram](https://github.com/victor-am/mega_store/raw/master/docs/entities.png)
+![Entities Diagram](https://github.com/plataformatec/mega_store/raw/master/docs/entities.png)
 
 This app is an API made as lightly as possible to allow developers to focus on object-oriented design. That means we had to trim down some (very important) topics to get just the Minimum Viable Design Experience™.
 
